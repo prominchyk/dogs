@@ -1,130 +1,167 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>DOGS</title>
- <style>
+'use strict';
 
-html {
-    background-color: rgb(249, 240, 227);
-    background-image: url('bones-dogs.jpg');
-    background-repeat: repeat;
-}
+import arrBreeds from './breeds.js';
+import shuffleElements from './functions.js';
 
-body {
-    width: 90%;
-    min-height: 95vh;
-    margin: 0 auto;
-    background-color: rgb(245, 245, 237);
-    background-image: url('dogs-back-image.jpg');
-    background-repeat: repeat;
-}
+ let getRandomPhotoButton = document.querySelector('#getRandomPhotoButton');
+ let getPhotoByBreedButton = document.querySelector('#getPhotoByBreedButton');
+ let getPhotoForTestButton = document.querySelector('#getPhotoForTestButton');
+ let photoDog = document.querySelector('#photoDog');
+ let breedDogName = document.querySelector('#breedDogName');
+ let breedSelect = document.querySelector('#menu select');
+ let testVariantsText = document.querySelectorAll('#dogTest span');
+ let dogTest = document.querySelector('#dogTest');
+ let radios = document.querySelectorAll('[name = radioDodBreed]');
 
-header {
-    border-bottom: 2px solid black;
-    margin: 2% auto;
-    padding-top: 1%;
-}
+ getRandomPhotoButton.addEventListener('click', function() {
+  this.disabled = true;
+   fetch('https://dog.ceo/api/breeds/image/random').then(response => {
+    if(response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Вибачте, сталася помилка. Спробуйте ще раз через деякий час.');
+    }
+   }).then(data => {
+    photoDog.innerHTML = '';
+    breedDogName.style.display = 'block';
+    dogTest.style.display = 'none';
+    let img = new Image;
+    let url = new URL(data.message);
+    img.src = data.message; 
+    img.style.width = '350px';
+    img.addEventListener('load', function() {
+        photoDog.append(img);
+    })
+    img.addEventListener('error', function() {
+      alert('Помилка завантаження фото! Спробуйте ще раз.');
+    })
+    let dogBreed = url.pathname.split('/')[2];
+    if(dogBreed === 'mix') {
+      throw new Error('Помилка завантаження фото! Спробуйте ще раз.');
+    }
+    for(let elem of arrBreeds) {
+      if(elem.url === dogBreed) {
+        breedDogName.textContent = elem.ua;
+      }
+    }
+    this.disabled = false;
+   }).catch(error => alert(error));
+ })
+ 
+ let urlSelected = 'affenpinscher';
+ for(let elem of arrBreeds) {
+  let option = new Option;
+  option.textContent = elem.ua;
+  if(option.textContent === 'МІКС') {
+    continue;
+  }
+  breedSelect.append(option);
+  let breedSelected;
+  breedSelect.addEventListener('change', function() {
+    if(option.selected) {
+    breedSelected = option.textContent;
+    }
+    if(elem.ua === breedSelected) {
+      urlSelected = elem.forRequest;
+    }
+  })
+ }
 
-header span {
-    display: block;
-    width: 100%;
-    font-size: 200%;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+ getPhotoByBreedButton.addEventListener('click', function() {
+  this.disabled = true;
+   fetch('https://dog.ceo/api/breed/' + urlSelected + '/images/random').then(response => {
+    if(response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Вибачте, сталася помилка. Спробуйте ще раз через деякий час.');
+    }
+   }).then(data => {
+    photoDog.innerHTML = '';
+    breedDogName.style.display = 'block';
+    dogTest.style.display = 'none';
+    let img = new Image;
+    let url = new URL(data.message);
+    img.src = data.message;
+    img.style.width = '350px';
+    img.addEventListener('load', function() {
+        photoDog.append(img);
+    })
+    img.addEventListener('error', function() {
+      alert('Помилка завантаження фото! Спробуйте ще раз.');
+    })
+    let dogBreed = url.pathname.split('/')[2];
+    for(let elem of arrBreeds) {
+      if(elem.url === dogBreed) {
+        breedDogName.textContent = elem.ua;
+      }
+    }
+    this.disabled = false;
+   }).catch(error => alert(error));
+ })
 
-#photoDog {
-  margin: 0 auto;
-  margin-top: 2%;
-  border: 6px solid rgb(206, 191, 134);
-  background-color: rgba(220, 206, 177, 0.7);
-  width: 350px;
-  min-height: 150px;
-}
+ getPhotoForTestButton.addEventListener('click', function() {
+  this.disabled = true;
+   fetch('https://dog.ceo/api/breeds/image/random').then(response => {
+    if(response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Вибачте, сталася помилка. Спробуйте ще раз через деякий час.');
+    }
+   }).then(data => {
+    photoDog.innerHTML = '';
+    breedDogName.style.display = 'none';
+    dogTest.style.display = 'block';
+    let img = new Image;
+    let url = new URL(data.message);
+    img.src = data.message; 
+    img.style.width = '350px';
+    img.addEventListener('load', function() {
+        photoDog.append(img);
+    })
+    img.addEventListener('error', function() {
+      alert('Помилка завантаження фото! Спробуйте ще раз.');
+    })
+    let dogBreed = url.pathname.split('/')[2];
+    let rightBreed = '';
+    if(dogBreed === 'mix') {
+      throw new Error('Помилка завантаження фото! Спробуйте ще раз.');
+    }
+    let testVariantsArr = [];
+    let randomBreedIndex = function() {
+      return Math.floor(Math.random() * arrBreeds.length);
+    }
+    for(let elem of arrBreeds) {
+      if(elem.url === dogBreed) {
+        testVariantsArr.push(elem.ua);
+        rightBreed = elem.ua;
+      }
+    }
+    while(testVariantsArr.length < 3) {
+      let randomBreed = arrBreeds[randomBreedIndex()].ua;
+      if(!testVariantsArr.includes(randomBreed) || randomBreed !== 'МІКС') {
+        testVariantsArr.push(randomBreed);
+      }
+    }
+    shuffleElements(testVariantsArr);
+    for(let i = 0; i < testVariantsText.length; i++) {
+      testVariantsText[i].textContent = testVariantsArr[i];
+    }
+    for(let radio of radios) {
+      radio.checked = false;
+      radio.nextElementSibling.style.backgroundColor = 'rgb(245, 245, 237)';
+      radio.addEventListener('change', function() {
+        let selectedBreed = radio.nextElementSibling;
+        if(selectedBreed.textContent === rightBreed) {
+          selectedBreed.style.backgroundColor = 'rgba(0, 128, 0, 0.6)';
+        } else {
+          selectedBreed.style.backgroundColor = 'rgba(255, 0, 0, 0.6)';
+        }
+      })
+    }
+    this.disabled = false;
+   }).catch(error => alert(error));
+ })
 
-#menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: left;
-}
+ 
 
-button {
-  font-weight: bold;
-  margin-bottom: 2%;
-  margin-right: 0.5%;
-}
 
-select {
-  margin-bottom: 2%;
-}
-
-#breedDogName {
-  font-size: 150%;
-  text-align: center;
-  color: blue;
-  font-weight: bold;
-  justify-content: space-around;
-  margin-top: 2%;
-}
-
-#dogTest {
-  display: none;
-  width: 80%;
-  margin: 0 auto;
-}
-
-#dogTest p {
-  font-size: 100%;
-  text-align: center;
-  color: blue;
-  font-weight: bold;
-}
-
-#radios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
- </style>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-    <header>
-        <span>РІЗНОМАЇТТЯ СОБАК</span>
-    </header>
-<div id="menu">
-  <button id="getRandomPhotoButton">Отримати випадкове фото</button>
-  <div id="buttonWithSelect">
-    <button id="getPhotoByBreedButton">Отримати фото по породі</button>
-    <select></select>
-  </div>
-  <button id="getPhotoForTestButton">Вікторина</button>
-</div>
-<p id="breedDogName"></p>
-<div id="dogTest">
-  <p>Яка порода собак зображена на фото?</p>
-  <div id="radios">
-    <div>
-      <label><input type="radio" name="radioDodBreed"> <span></span></label>
-    </div>
-    <div>
-      <label><input type="radio" name="radioDodBreed"> <span></span></label>
-    </div>
-    <div>
-      <label><input type="radio" name="radioDodBreed"> <span></span></label>
-    </div>
-  </div>
-</div>
-<div id="photoDog"></div>
-
-<script defer src="bundle.js"></script>
-
-</body>
-</html>
