@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOGS</title>
+ <style>
+
+html {
+    background-color: rgb(249, 240, 227);
+    background-image: url('bones-dogs.jpg');
+    background-repeat: repeat;
+}
+
+body {
+    width: 80%;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 237);
+    background-image: url('dogs-back-image.jpg');
+    background-repeat: repeat;
+}
+
+header {
+    border-bottom: 2px solid black;
+    margin: 2% auto;
+    padding-top: 1%;
+}
+
+header span {
+    display: block;
+    width: 100%;
+    font-size: 210%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#photoDog {
+  margin: 0 auto;
+  margin-top: 2%;
+  border: 6px solid darkcyan;
+  background-color: rgba(0, 139, 139, 0.7);
+  width: 400px;
+  min-height: 300px;
+}
+
+#menu {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+button {
+  font-weight: bold;
+}
+
+#breedDogName {
+  font-size: 150%;
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+#dogTest {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#dogTest p {
+  font-size: 100%;
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
+
+#radios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ </style>
+</head>
+
+<body>
+    <header>
+        <span>РІЗНОМАЇТТЯ СОБАК</span>
+    </header>
+<div id="menu">
+  <button id="getRandomPhotoButton">Отримати випадкове фото</button>
+  <div>
+    <button id="getPhotoByBreedButton">Отримати фото по породі</button>
+    <select></select>
+  </div>
+  <button id="getPhotoForTestButton">Вікторина</button>
+</div>
+<p id="breedDogName"></p>
+<div id="dogTest">
+  <p>Яка порода собак зображена на фото?</p>
+  <div id="radios">
+    <div>
+      <label><input type="radio" name="radioDodBreed"> <span></span></label>
+    </div>
+    <div>
+      <label><input type="radio" name="radioDodBreed"> <span></span></label>
+    </div>
+    <div>
+      <label><input type="radio" name="radioDodBreed"> <span></span></label>
+    </div>
+  </div>
+</div>
+<div id="photoDog"></div>
+
+<script defer src="dist/bundle.js"></script>
+
+</body>
+</html>
