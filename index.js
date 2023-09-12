@@ -28,7 +28,7 @@ import shuffleElements from './functions.js';
     let img = new Image;
     let url = new URL(data.message);
     img.src = data.message; 
-    img.style.width = '350px';
+    img.style.width = '100%';
     img.addEventListener('load', function() {
         photoDog.append(img);
     })
@@ -82,7 +82,7 @@ import shuffleElements from './functions.js';
     let img = new Image;
     let url = new URL(data.message);
     img.src = data.message;
-    img.style.width = '350px';
+    img.style.width = '100%';
     img.addEventListener('load', function() {
         photoDog.append(img);
     })
@@ -114,7 +114,7 @@ import shuffleElements from './functions.js';
     let img = new Image;
     let url = new URL(data.message);
     img.src = data.message; 
-    img.style.width = '350px';
+    img.style.width = '100%';
     img.addEventListener('load', function() {
         photoDog.append(img);
     })
