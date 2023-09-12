@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    width: 90%;
+    width: 80%;
     min-height: 95vh;
     margin: 0 auto;
     background-color: rgb(245, 245, 237);
@@ -41,8 +41,42 @@ header span {
   margin-top: 2%;
   border: 6px solid rgb(206, 191, 134);
   background-color: rgba(220, 206, 177, 0.7);
-  width: 350px;
+  width: 80%;
   min-height: 150px;
+}
+
+#getRandomPhotoButton, #buttonWithSelect, #getPhotoForTestButton {
+  margin-bottom: 3%;
+}
+
+button {
+  font-weight: bold;
+  margin-right: 0.5%;
+  height: 10vh;
+}
+
+@media (max-width: 600px) {
+  #photoDog {
+    width: 95%;
+  }
+
+  body {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #photoDog {
+    width: 60%;
+  }
+
+  #getRandomPhotoButton, #buttonWithSelect, #getPhotoForTestButton {
+   margin-bottom: 0;
+  }
+
+  button {
+    height: 6vh;
+  }
 }
 
 #menu {
@@ -53,13 +87,11 @@ header span {
   justify-content: left;
 }
 
-button {
-  font-weight: bold;
-  margin-bottom: 2%;
-  margin-right: 0.5%;
+select {
+  width: 100%;
 }
 
-select {
+#getPhotoByBreedButton {
   margin-bottom: 2%;
 }
 
