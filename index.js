@@ -48,24 +48,37 @@ import shuffleElements from './functions.js';
    }).catch(error => alert(error));
  })
  
- let urlSelected = 'affenpinscher';
+ let urlSelected = 'akita';
+ let breedSelected = '';
+ let arrBreedsUa = [];
  for(let elem of arrBreeds) {
+  arrBreedsUa.push(elem.ua);
+ }
+arrBreedsUa.sort();
+
+for(let i = 0; i < arrBreeds.length; i++) {
   let option = new Option;
-  option.textContent = elem.ua;
+  option.textContent = arrBreedsUa[i];
   if(option.textContent === 'МІКС') {
     continue;
   }
   breedSelect.append(option);
-  let breedSelected;
-  breedSelect.addEventListener('change', function() {
+}
+
+let options = document.querySelectorAll('option');
+breedSelect.addEventListener('change', function() {
+  for(let option of options) {
     if(option.selected) {
-    breedSelected = option.textContent;
+      breedSelected = option.textContent;
     }
-    if(elem.ua === breedSelected) {
-      urlSelected = elem.forRequest;
+    for(let elem of arrBreeds) {
+      if(elem.ua === breedSelected) {
+        urlSelected = elem.forRequest;
+      }
     }
-  })
- }
+  }
+})
+  
 
  getPhotoByBreedButton.addEventListener('click', function() {
   this.disabled = true;
