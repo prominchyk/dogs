@@ -23,12 +23,12 @@ export default [
     {
       url: 'appenzeller',
       forRequest: 'appenzeller',
-      ua: 'Аппенцеллер зенненхунд'
+      ua: 'Зенненхунд аппенцеллер'
     },
     {
       url: 'australian-shepherd',
       forRequest: 'australian/shepherd',
-      ua: 'Австралійська вівчарка'
+      ua: 'Вівчарка австралійська'
     },
     {
       url: 'basenji',
@@ -43,12 +43,12 @@ export default [
     {
       url: 'bluetick',
       forRequest: 'bluetick',
-      ua: 'Крапчасто-блакитний кунгаунд'
+      ua: 'Кунгаунд крапчасто-блакитний'
     },
     {
       url: 'borzoi',
       forRequest: 'borzoi',
-      ua: 'Російський мисливський хорт'
+      ua: 'Хорт російський мисливський'
     },
     {
       url: 'bouvier',
@@ -58,7 +58,7 @@ export default [
     {
       url: 'boxer',
       forRequest: 'boxer',
-      ua: 'Німецький боксер'
+      ua: 'Боксер німецький'
     },
     {
       url: 'brabancon',
@@ -73,32 +73,32 @@ export default [
     {
       url: 'buhund-norwegian',
       forRequest: 'buhund/norwegian',
-      ua: 'Норвезький бухунд'
+      ua: 'Бухунд норвезький'
     },
     {
       url: 'bulldog-boston',
       forRequest: 'bulldog/boston',
-      ua: 'Американський бульдоґ'
+      ua: 'Бульдог американський'
     },
     {
       url: 'bulldog-english',
       forRequest: 'bulldog/english',
-      ua: 'Англійський бульдог'
+      ua: 'Бульдог англійський'
     },
     {
       url: 'bulldog-french',
       forRequest: 'bulldog/french',
-      ua: 'Французький бульдог'
+      ua: 'Бульдог французький'
     },
     {
       url: 'bullterrier-staffordshire',
       forRequest: 'bullterrier/staffordshire',
-      ua: 'Стаффордширський бультер’єр'
+      ua: 'Бультер’єр стаффордширський'
     },
     {
       url: 'cattledog-australian',
       forRequest: 'cattledog/australian',
-      ua: 'Австралійський хілер'
+      ua: 'Хілер австралійський'
     },
     {
       url: 'chihuahua',
@@ -113,7 +113,7 @@ export default [
     {
       url: 'clumber',
       forRequest: 'clumber',
-      ua: 'Кламбер-спанієль'
+      ua: 'Спанієль-кламбер'
     },
     {
       url: 'cockapoo',
@@ -123,7 +123,7 @@ export default [
     {
       url: 'collie-border',
       forRequest: 'collie/border',
-      ua: 'Бордер-колі'
+      ua: 'Колі-бордер'
     },
     {
       url: 'coonhound',
@@ -153,7 +153,7 @@ export default [
     {
       url: 'dane-great',
       forRequest: 'dane/great',
-      ua: 'Німецький дог'
+      ua: 'Дог німецький'
     },
     {
       url: 'deerhound-scottish',
@@ -178,22 +178,22 @@ export default [
     {
       url: 'elkhound-norwegian',
       forRequest: 'elkhound/norwegian',
-      ua: 'Нοрвезький елкхунд'
+      ua: 'Елкхунд нοрвезький'
     },
     {
       url: 'entlebucher',
       forRequest: 'entlebucher',
-      ua: 'Ентлебухер зенненхунд'
+      ua: 'Зенненхунд ентлебухер'
     },
     {
       url: 'eskimo',
       forRequest: 'eskimo',
-      ua: 'Канадський ескімоський собака'
+      ua: 'Ескімоський канадський собака'
     },
     {
       url: 'finnish-lapphund',
       forRequest: 'finnish/lapphund',
-      ua: 'Фінський лапхунд'
+      ua: 'Лапхунд фінський'
     },
     {
       url: 'frise-bichon',
@@ -203,17 +203,17 @@ export default [
     {
       url: 'germanshepherd',
       forRequest: 'germanshepherd',
-      ua: 'Німецька вівчарка'
+      ua: 'Вівчарка німецька'
     },
     {
       url: 'greyhound-italian',
       forRequest: 'greyhound-italian',
-      ua: 'Італійський хорт'
+      ua: 'Хорт італійський'
     },
     {
       url: 'groenendael',
       forRequest: 'groenendael',
-      ua: 'Бельгійська вівчарка грюнендаль'
+      ua: 'Вівчарка бельгійська грюнендаль'
     },
     {
       url: 'havanese',
@@ -223,7 +223,7 @@ export default [
     {
       url: 'hound-afghan',
       forRequest: 'hound/afghan',
-      ua: 'Афганський хорт'
+      ua: 'Хорт афганський'
     },
     {
       url: 'hound-basset',
@@ -238,7 +238,7 @@ export default [
     {
       url: 'hound-english',
       forRequest: 'hound/english',
-      ua: 'Англійський фоксхаунд'
+      ua: 'Фоксхаунд англійський'
     },
     {
       url: 'hound-ibizan',
@@ -253,12 +253,12 @@ export default [
     {
       url: 'hound-walker',
       forRequest: 'hound/walker',
-      ua: 'Деревний єнотовий гончак'
+      ua: 'Гончак деревний єнотовий'
     },
     {
       url: 'husky',
       forRequest: 'husky',
-      ua: 'Сибірський хаскі'
+      ua: 'Хаскі сибірський'
     },
     {
       url: 'keeshond',
@@ -268,7 +268,7 @@ export default [
     {
       url: 'kelpie',
       forRequest: 'kelpie',
-      ua: 'Австралійський келпі'
+      ua: 'Келпі австралійський'
     },
     {
       url: 'komondor',
@@ -303,12 +303,12 @@ export default [
     {
       url: 'malamute',
       forRequest: 'malamute',
-      ua: 'Аляскинський маламут'
+      ua: 'Маламут аляскинський'
     },
     {
       url: 'malinois',
       forRequest: 'malinois',
-      ua: 'Бельгійська вівчарка малінуа'
+      ua: 'Вівчарка бельгійська малінуа'
     },
     {
       url: 'maltese',
@@ -323,12 +323,12 @@ export default [
     {
       url: 'mastiff-english',
       forRequest: 'mastiff/english',
-      ua: 'Англійський мастиф'
+      ua: 'Мастиф англійський'
     },
     {
       url: 'mastiff-tibetan',
       forRequest: 'mastiff/tibetan',
-      ua: 'Тибетський мастиф'
+      ua: 'Мастиф тибетський'
     },
     {
       url: 'mexicanhairless',
@@ -343,12 +343,12 @@ export default [
     {
       url: 'mountain-bernese',
       forRequest: 'mountain/bernese',
-      ua: 'Бернський зенненхунд'
+      ua: 'Зенненхунд бернський'
     },
     {
       url: 'mountain-swiss',
       forRequest: 'mountain/swiss',
-      ua: 'Великий швейцарський зенненхунд'
+      ua: 'Зенненхунд великий швейцарський' 
     },
     {
       url: 'newfoundland',
@@ -363,12 +363,12 @@ export default [
     {
       url: 'ovcharka-caucasian',
       forRequest: 'ovcharka/caucasian',
-      ua: 'Кавказька вівчарка'
+      ua: 'Вівчарка кавказька'
     },
     {
       url: 'papillon',
       forRequest: 'papillon',
-      ua: 'Континентальний той-спанієль'
+      ua: 'Спанієль-той континентальний'
     },
     {
       url: 'pekinese',
@@ -388,22 +388,22 @@ export default [
     {
       url: 'pitbull',
       forRequest: 'pitbull',
-      ua: 'Американський пітбультер’єр'
+      ua: 'Пітбультер’єр американський'
     },
     {
       url: 'pointer-german',
       forRequest: 'pointer/german',
-      ua: 'Німецький короткошерстий лягавий собака'
+      ua: 'Лягавий собака німецький короткошерстий'
     },
     {
       url: 'pointer-germanlonghair',
       forRequest: 'pointer/germanlonghair',
-      ua: 'Німецький лангхар'
+      ua: 'Лангхар німецький'
     },
     {
       url: 'pomeranian',
       forRequest: 'pomeranian',
-      ua: 'Мініатюрний шпіц'
+      ua: 'Шпіц мініатюрний'
     },
     {
       url: 'poodle-medium',
@@ -423,7 +423,7 @@ export default [
     {
       url: 'poodle-toy',
       forRequest: 'poodle/toy',
-      ua: 'Той-пудель'
+      ua: 'Пудель-той'
     },
     {
       url: 'pug',
@@ -443,32 +443,32 @@ export default [
     {
       url: 'redbone',
       forRequest: 'redbone',
-      ua: 'Червоний‌ ‌кунгаунд‌'
+      ua: 'Кунгаунд‌ червоний‌'
     },
     {
       url: 'retriever-chesapeake',
       forRequest: 'retriever/chesapeake',
-      ua: 'Чесапік-бей-ретривер'
+      ua: 'Ретривер-чесапік-бей'
     },
     {
       url: 'retriever-curly',
       forRequest: 'retriever/curly',
-      ua: 'Курчавошерстий ретривер'
+      ua: 'Ретривер курчавошерстий'
     },
     {
       url: 'retriever-flatcoated',
       forRequest: 'retriever/flatcoated',
-      ua: 'Прямошерстий ретривер'
+      ua: 'Ретривер прямошерстий'
     },
     {
       url: 'retriever-golden',
       forRequest: 'retriever/golden',
-      ua: 'Ґолден-ретривер'
+      ua: 'Ретривер голден'
     },
     {
       url: 'ridgeback-rhodesian',
       forRequest: 'ridgeback/rhodesian',
-      ua: 'Родезійський ріджбек'
+      ua: 'Ріджбек родезійський' 
     },
     {
       url: 'rottweiler',
@@ -503,22 +503,22 @@ export default [
     {
       url: 'segugio-italian',
       forRequest: 'segugio/italian',
-      ua: 'Італійський гончак'
+      ua: 'Гончак італійський'
     },
     {
       url: 'setter-english',
       forRequest: 'setter/english',
-      ua: 'Англійський сетер'
+      ua: 'Сетер англійський'
     },
     {
       url: 'setter-gordon',
       forRequest: 'setter/gordon',
-      ua: 'Ґордон-сетер'
+      ua: 'Сетер гордон'
     },
     {
       url: 'setter-irish',
       forRequest: 'setter/irish',
-      ua: 'Ірландський червоний сетер'
+      ua: 'Сетер червоний ірландський'
     },
     {
       url: 'sharpei',
@@ -548,47 +548,47 @@ export default [
     {
       url: 'spaniel-blenheim',
       forRequest: 'spaniel/blenheim',
-      ua: 'Кавалер-кінґ-чарльз-спанієль'
+      ua: 'Спанієль кавалер-кінґ-чарльз'
     },
     {
       url: 'spaniel-brittany',
       forRequest: 'spaniel/brittany',
-      ua: 'Бретонський спанієль'
+      ua: 'Спанієль бретонський'
     },
     {
       url: 'spaniel-cocker',
       forRequest: 'spaniel/cocker',
-      ua: 'Кокер-спанієль'
+      ua: 'Спанієль-кокер'
     },
     {
       url: 'spaniel-irish',
       forRequest: 'spaniel/irish',
-      ua: 'Ірландський водяний спанієль'
+      ua: 'Спанієль ірландський водяний'
     },
     {
       url: 'spaniel-japanese',
       forRequest: 'spaniel/japanese',
-      ua: 'Японський хін'
+      ua: 'Хін японський'
     },
     {
       url: 'spaniel-sussex',
       forRequest: 'spaniel/sussex',
-      ua: 'Сасекс-спанієль'
+      ua: 'Спанієль-сасекс'
     },
     {
       url: 'spaniel-welsh',
       forRequest: 'spaniel/welsh',
-      ua: 'Вельш-спринґер-спанієль'
+      ua: 'Спанієль-вельш-спринґер'
     },
     {
       url: 'spitz-japanese',
       forRequest: 'spitz/japanese',
-      ua: 'Японський шпіц'
+      ua: 'Шпіц японський'
     },
     {
       url: 'springer-english',
       forRequest: 'springer/english',
-      ua: 'Англійський спринґер-спанієль'
+      ua: 'Спанієль-спринґер англійський'
     },
     {
       url: 'stbernard',
@@ -598,32 +598,32 @@ export default [
     {
       url: 'terrier-american',
       forRequest: 'terrier/american',
-      ua: 'Американський стафордшир-тер’єр'
+      ua: 'Стафордшир-тер’єр американський'
     },
     {
       url: 'terrier-australian',
       forRequest: 'terrier/australian',
-      ua: 'Австралійський тер’єр'
+      ua: 'Тер’єр австралійський'
     },
     {
       url: 'terrier-bedlington',
       forRequest: 'terrier/bedlington',
-      ua: 'Бедлінгтон-тер’єр'
+      ua: 'Тер’єр бедлінгтон'
     },
     {
       url: 'terrier-border',
       forRequest: 'terrier/border',
-      ua: 'Бордер-тер’єр'
+      ua: 'Тер’єр-бордер'
     },
     {
       url: 'terrier-cairn',
       forRequest: 'terrier/cairn',
-      ua: 'Керн-тер’єр'
+      ua: 'Тер’єр-керн'
     },
     {
       url: 'terrier-dandie',
       forRequest: 'terrier/dandie',
-      ua: 'Денді-дінмонт-тер’єр'
+      ua: 'Тер’єр денді-дінмонт'
     },
     {
       url: 'terrier-fox',
@@ -633,62 +633,62 @@ export default [
     {
       url: 'terrier-irish',
       forRequest: 'terrier/irish',
-      ua: 'Ірландський тер’єр'
+      ua: 'Тер’єр ірландський'
     },
     {
       url: 'terrier-kerryblue',
       forRequest: 'terrier/kerryblue',
-      ua: 'Керрі блю тер’єр'
+      ua: 'Тер’єр керрі блю'
     },
     {
       url: 'terrier-lakeland',
       forRequest: 'terrier/lakeland',
-      ua: 'Лейкленд-тер’єр'
+      ua: 'Тер’єр-лейкленд'
     },
     {
       url: 'terrier-norfolk',
       forRequest: 'terrier/norfolk',
-      ua: 'Норфолк-тер’єр'
+      ua: 'Тер’єр-норфолк'
     },
     {
       url: 'terrier-norwich',
       forRequest: 'terrier/norwich',
-      ua: 'Норвіч-тер’єр'
+      ua: 'Тер’єр-норвіч'
     },
     {
       url: 'terrier-patterdale',
       forRequest: 'terrier/patterdale',
-      ua: 'Паттердейл-тер’єр'
+      ua: 'Тер’єр-паттердейл'
     },
     {
       url: 'terrier-russell',
       forRequest: 'terrier/russell',
-      ua: 'Джек-рассел-тер’єр'
+      ua: 'Тер’єр джек-рассел'
     },
     {
       url: 'terrier-scottish',
       forRequest: 'terrier/scottish',
-      ua: 'Шотландський тер’єр'
+      ua: 'Тер’єр шотландський'
     },
     {
       url: 'terrier-sealyham',
       forRequest: 'terrier/sealyham',
-      ua: 'Сіліхем-тер’єр'
+      ua: 'Тер’єр-сіліхем'
     },
     {
       url: 'terrier-silky',
       forRequest: 'terrier/silky',
-      ua: 'Австралійський шовковистий тер’єр'
+      ua: 'Тер’єр австралійський шовковистий'
     },
     {
       url: 'terrier-tibetan',
       forRequest: 'terrier/tibetan',
-      ua: 'Тибетський тер’єр'
+      ua: 'Тер’єр тибетський'
     },
     {
       url: 'terrier-toy',
       forRequest: 'terrier/toy',
-      ua: 'Той-тер’єр'
+      ua: 'Тер’єр-той'
     },
     {
       url: 'terrier-welsh',
@@ -698,32 +698,32 @@ export default [
     {
       url: 'terrier-westhighland',
       forRequest: 'terrier/westhighland',
-      ua: 'Вест-хайленд-вайт-тер’єр'
+      ua: 'Тер’єр вест-хайленд-вайт'
     },
     {
       url: 'terrier-wheaten',
       forRequest: 'terrier/wheaten',
-      ua: 'Ірландський м’якошерстий пшеничний тер’єр'
+      ua: 'Тер’єр ірландський м’якошерстий пшеничний'
     },
     {
       url: 'terrier-yorkshire',
       forRequest: 'terrier/yorkshire',
-      ua: 'Йоркширский тер’єр'
+      ua: 'Тер’єр йоркширский'
     },
     {
       url: 'tervuren',
       forRequest: 'tervuren',
-      ua: 'Бельгійська вівчарка тервюрен'
+      ua: 'Вівчарка бельгійська тервюрен'
     },
     {
       url: 'vizsla',
       forRequest: 'vizsla',
-      ua: 'Угорський короткошерстий пойнтер (Вижла)'
+      ua: 'Пойнтер угорський короткошерстий (Вижла)'
     },
     {
       url: 'waterdog-spanish',
       forRequest: 'waterdog/spanish',
-      ua: 'Іспанський водяний собака'
+      ua: 'Водяний собака іспанський'
     },
     {
       url: 'weimaraner',
@@ -738,9 +738,7 @@ export default [
     {
       url: 'wolfhound-irish',
       forRequest: 'wolfhound/irish',
-      ua: 'Ірландський вольфгаунд'
+      ua: 'Вольфгаунд ірландський'
     },
 
   ]
-
-
