@@ -1,7 +1,7 @@
-<h2>Сайт для ознайомлення з породами собак</h2>
+<h2>A site for getting to know dog breeds</h2>
 
-<p>Створений з використанням даних зі стороннього API https://dog.ceo/dog-api/</p>
-<p>Дозволяє отримати фото рандомної та конкретної породи собаки, а також пройти тест на знання порід собак.</p>
-<p>Реалізований з використанням HTML, CSS, JS, AJAX, Webpack</p>
+<p>Created using data from a third party API https://dog.ceo/dog-api/</p>
+<p>Allows you to get a photo of a random and specific breed of dog, as well as pass a test on knowledge of dog breeds.</p>
+<p>Implemented using HTML, CSS, JS, AJAX, Webpack</p>
 
-<p>Сайт: https://prominchyk.github.io/dogs/ </p>
+<p>Site address: https://prominchyk.github.io/dogs/ </p>
